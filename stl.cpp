@@ -76,3 +76,120 @@ void vectors(){
 
     cout << v.empty();
 }
+
+void explainList() { // exactly similar to vector, but as a add ons gives front operations as well. 
+    list<int> ls;
+
+    ls.push_back(2);
+    ls.emplace_back(4);
+    ls.push_front(5);
+
+    ls.explace_front(); {2, 4}; 
+}
+
+void explainDeque(){
+    deque<int>dq;
+    dq.push_back(1); //{1}
+    dq.emplace_back(2); // {1,2}
+    dq.push_front(4); // {4,1,2}
+    dq.emplace_front(5); // {5,4,3,2}
+
+    dq.pop_back(); // {5,4,3}
+    dq.pop_front(); // {4,3}
+
+    dq.back();
+
+    d1.front();
+
+}
+
+void explainStack(){
+    stack<int> st;
+    st.push(1); // {1}
+    st.push(2); // {2,1}
+    st.push(3); // {3,2,1}
+    st.push(4); // {4,3,2,1}
+    st.emplace(5); // {5,4,3,2,1}
+
+    cout << st.top();
+    st.pop();
+
+    cout << st.size();
+    cout << st.empty();
+
+    stack<int>st1, st2;
+    st1.swap(st2);
+
+    // Operations are 0(1);
+}
+
+void explainQueue(){
+    queue<int> q;
+    q.push(1); // {1}
+    q.push(2); // {1, 2}
+    q.emplace(4); // {1, 2, 4}
+
+    q.back() += 5
+
+    cout << q.back(); // prints 9
+
+    // Q is {1, 2, 9}
+    cout << q.front() // prints 1
+
+    q.pop(); // {2,9}
+
+    cout << q.front(); // prints 2
+
+    // size swap empty same as stack.
+}
+
+void explainPQ() {
+    // Maximum Priority Queue (Max heap)
+    priority_queue<int> pq;
+
+    pq.push(5); // {5}
+    pq.push(2); // {5, 2}
+    pq.push(8); // {8, 5, 2}
+    pr.emplace(10); // {10, 8, 5, 2}  // Priority queue gives the priority to the highest value
+
+    cout << pq.top(); // prints 10
+
+    pq.pop(); // {8,5,2}
+
+    // size swap empty function same as others
+
+    // Minimum Heap(minimum priority queue )
+
+    priority_queue<int, vector<int>, greater<int>> pq;
+    pq.push(5); //{5}
+    pq.push(2); // {2, 5}
+    pq.push(8); // {2, 5, 8}
+    pq.emplace(10); // {2, 5, 8, 10}
+
+    cout << pq.top(); // prints 2
+
+    // push, pop happens in logn
+    // top in 0(1) time complexity.
+}
+
+void explainSet() {
+    // Set stores everything in sorted order and stores unique.
+    set<int> st;
+    st.insert(1); // {1}
+    st.emplace(2); // {1, 2}
+    st.insert(2); // {1, 2}
+    st.insert(4); // {1, 2, 4}
+    st.insert(3); // {1, 2, 3, 4}
+
+    // Functionality of insert in vector can be used also, that only increases efficiency.
+
+    // begin(), end(), rend(), rbegin(), size(), empty() and swap() are same as those of above.
+
+    auto it = st.find(3);
+
+    auto it = st.find(6);
+
+    st.erase(5);
+
+    int cnt = st.count(1);
+}
