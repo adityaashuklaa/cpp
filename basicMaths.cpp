@@ -103,3 +103,12 @@ int prime(int n){ // TC => 0(sqrt(n))
 // gcd(n1, n2) = gcd(n1-n2, n2) where n1 > n2
 // gcd(n1, n2) = gcd(n1%n2, n2) where n1 > n2. If one of them is zero, the another is gcd.
 // TC => 0(log phi (m(a, b)))  In terms of divison the iteratiosn will be in terms of logn
+
+int gcd(int a, int b){
+    while(a > 0 && b > 0){
+        if (a > b) a = a%b;
+        else b = b % a;
+    }
+    if(a==0) return b;
+    return a;
+}
