@@ -58,3 +58,48 @@ int Amrstrong(int n){
     if (dup == sum) cout << "True";
     else cout << "False";
 }
+
+// Print all divisors 
+int printAllDivisors(){
+    for(i=1; i<=n; i++){ // TC => 0(n)
+        if(n%i = 0){
+            cout << i << " ";
+        }
+    }
+}
+
+// Optimised Way
+int printDevisors(int n){ // tc => 
+    vector<int> ls;
+    // for(int i =1; i<=sqrt(n); i++){
+    for(int i = 1; i*i<=n; i++){ // tc => 0(sqrt(n))
+        if(n%i==0){
+            ls.push_back(i);
+            if((n/i) !=i){
+                ls.push_back(n/i);
+            }
+        }
+    }
+    // tc => 0(n log n): n =>   number of factors
+    sort(ls.begin(), ls.end());
+    // 0 (number of factors) 
+    for(auto it : ls)  cout << it << " ";
+}
+
+int prime(int n){ // TC => 0(sqrt(n))
+    int cnt = 0;
+    for(int i =1; i*i <= n; i++){
+        if(n%i == 0){
+            cnt++;
+            if((n/i)!= i)
+            cnt++;
+        }
+    }
+    if (cnt == 2) cout << "Prime";
+    else cout << "Not a Prime";
+}
+
+// Euclidean Algorithm 
+// gcd(n1, n2) = gcd(n1-n2, n2) where n1 > n2
+// gcd(n1, n2) = gcd(n1%n2, n2) where n1 > n2. If one of them is zero, the another is gcd.
+// TC => 0(log phi (m(a, b)))  In terms of divison the iteratiosn will be in terms of logn
