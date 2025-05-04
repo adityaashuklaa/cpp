@@ -1,9 +1,6 @@
-void print(){
-//     cout << 1 << endl;
-//     print();
-// }
+int main(){
+//     int n = 5;
+//     cout << facN(n);
 
-// int main(){
-//     print();
 //     return 0;
 // }
