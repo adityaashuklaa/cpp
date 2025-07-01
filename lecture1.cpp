@@ -8,3 +8,10 @@ int main(){
     std::cout<< "Starting off with the DSA."
     return 0;
 }
+
+int main2(){
+    int x, y;
+    cin >> x >> y;
+    cout << "Value of x :" << x << " and y : " << y;
+    return 0;
+}
