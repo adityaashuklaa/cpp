@@ -57,7 +57,7 @@ void print7(int n){
     for(int i=0; i<n; i++){
         // space
         for(int j=0; j<=n-i-1; j++){
-            cout << " ";
+            cout << "-";
         }
         //star
         for(int j=0; j<2*i+1; j++){
@@ -65,7 +65,7 @@ void print7(int n){
         }
         // space
         for(int j=0; j<=n-i-1; j++){
-            cout << " ";
+            cout << "-";
         }
         cout << endl;
     }
@@ -243,6 +243,6 @@ int main() {
     for(int i =0; i<t; i++){
         int n;
         cin >> n;
-        print18(n);
+        print8(n);
     }
 }
