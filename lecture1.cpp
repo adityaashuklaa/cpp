@@ -15,3 +15,33 @@ int main2(){
     cout << "Value of x :" << x << " and y : " << y;
     return 0;
 }
+
+// Data Types
+int main3(){
+    int x = 10;
+    long x = 1000;
+    cin >> x;
+
+    long long x = 150000000000000000;
+
+    double z = 5.6
+    float y = 5 // Also stores integer
+    string s;
+    cin >> s; // Only takes the first string as the input i.e Aditya Shukla , s = Aditya
+    cout << s; 
+    getline(cin, s) // While take the whole s as the input.
+    cout << s; 
+    char ch= 'a'; // Single quotes is used to define a character where as, "" is used for string. 
+    cout << ch;
+    return 0;
+}
+
+int main4(){
+    int age;
+    cin >> age;
+    if(age >=){
+        cout << "You're an adult"
+    } else {
+        cout << "You're not an adult"
+    }
+}
