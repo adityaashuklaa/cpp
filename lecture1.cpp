@@ -53,3 +53,9 @@ int main4(){
    }
    return 0;
 }
+
+int main5(){
+    //2-D Array
+    int arr[3][5]; // If you don't assign any value to the places, then those empty places will store garbage value.
+    return 0; 
+}
