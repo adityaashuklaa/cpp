@@ -59,3 +59,17 @@ int main5(){
     int arr[3][5]; // If you don't assign any value to the places, then those empty places will store garbage value.
     return 0; 
 }
+int main6(){
+    string s = "Aditya";
+    int len = s.size();
+    s[len-1] = 'z';
+    cout << s[len-1];
+    return 0;
+}
+
+/* Functions 
+    void => which does not returns anything
+    return 
+    parameterised
+    non parameterised
+*/
