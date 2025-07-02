@@ -73,3 +73,14 @@ int main6(){
     parameterised
     non parameterised
 */
+
+void printName(string name) {
+    cout << "Hey " << name ;
+}
+
+int main7(){
+    string name;
+    cin >> name;
+    printName(name);
+    return 0;
+}
