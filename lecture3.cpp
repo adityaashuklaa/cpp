@@ -132,4 +132,14 @@ void explainStack(){
 }
 // Stack follows LIFO, and all functions follow 0(1) time complexity.
 
-void explain
+void explainQueue(){
+    queue<int> q;
+    q.push(1); // {1}
+    q.push(2); // {2,1}
+    q.emplace(5); // {5,2,1}}
+
+    q.back() += 5;
+    cout << q.back(); // prints 9
+    cout << q.front(); // prints 1
+    q.pop(); // {2,5}
+}
