@@ -1,0 +1,4 @@
+/* Time Complexity 
+Rate of which the time taken increases with respect to the input size.
+
+*/
