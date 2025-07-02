@@ -36,26 +36,33 @@ void explainVector(){
     vector<int> v1(5, 20);
     vector<int> v2(v1); // copying container to another vector.
 
-    vector<int>::iterator it = v.begin();
+    vector<int>::iterator it = v.begin();  // iterator points to the memory where data is being stored, not the element.
     it ++;
-    cout << *(it) << " ";
+    cout << *(it) << " "; // * is used for the elements.
 
     it = it +2;
     cout << *(it) << " ";
 
-    vector<int>::iterator it = v.end();
+    vector<int>::iterator it = v.end(); // end will point the memory location after the container(last element).
     vector<int>::iterator it = v.rend();
     vector<int>::iterator it = v.rbegin();
 
     cout << v[0] << " " << v.at(0);
-    cout << v.back() << " ";
+    cout << v.back() << " "; // last element.
 
     for (vector<int>::iterator it = v.begin(); it!= v.end(); it++){
         cout << *(it) << " ";
     }
-    for (auto it = v.begin(); it != v.end(); it++){
+    for (auto it = v.begin(); it != v.end(); it++){ // using auto the data type is automatically assigned.
         cout << *(it) << " ";
     }
+    for (auto it: v) {
+        cout << it << " ";
+    }
+
+    // {10, 20, 30,40}
+    v.erase(v.begin()+1); // 20 will be erased.
+    v.erase(v.begin() + 2, v.begin() + 4);
 }
 
 // Arrays sizes cannot be modified, that's why vectors comes into the picture, you can easily manipulate the size of the vector.
