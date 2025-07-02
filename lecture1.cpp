@@ -84,3 +84,22 @@ int main7(){
     printName(name);
     return 0;
 }
+
+// pass value => copy of the number goes
+void addSomething(int &num) { // pass reference
+    cout << num << endl;
+    num += 5;
+    cout << num << endl;
+    num += 5;
+    cout << num << endl;
+}
+
+int main8() {
+    int num = 10;
+    addSomething(num);
+    cout << num << endl;
+    // 10 will be printed.
+    return 0;
+}
+
+// Arrays are always passed by reference, for other we have to use & if want to pass by reference.
