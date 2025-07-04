@@ -136,7 +136,7 @@ void explainQueue(){
     queue<int> q;
     q.push(1); // {1}
     q.push(2); // {2,1}
-    q.emplace(5); // {5,2,1}}
+    q.emplace(5); // {5,2,1}}    
 
     q.back() += 5;
     cout << q.back(); // prints 9
