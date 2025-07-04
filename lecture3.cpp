@@ -97,7 +97,7 @@ void explainList() {
     // rest functions are same as vectors
 }
 // An insert inside a vector is very costly.
-void explainDeque(){
+void explainDeque(){   
     deque<int> dq;
 
     dq.push_back(2); // {2}
