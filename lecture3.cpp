@@ -253,8 +253,18 @@ void explainMap(){
 
     for(auto it: mpp) {
         cout << it.first << " " << it.second << endl;
+        // Traversing in a map.
     }
 
     cout << mpp[1];
-    cout << mpp[5];
+    cout << mpp[5]; // If key is not present it prints null or 0 
+
+    auto it = mpp.find(3);
+    cout << *(it).second;
+
+    auto it = mpp.find(5);
+
+    auto it = mpp.lower_bound(2);
+    auto it = mpp.lower_bound(3);
+    // erase, swap, size, empty are same as above.
 }
