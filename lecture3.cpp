@@ -183,4 +183,14 @@ void explainSet(){
 
     // Functionlity of insert in vector can be used also, that only increases efficiency.
     // All other functions are same as earlier containers
+    
+    // {1, 2, 3, 4, 5}
+    auto it = st.find(3);
+    auto it = st.find(6);
+
+    st.erase(5); // erasing 5 takes logarithimic time
+
+    int cnt = st.count(1);
+
+    auto it = st.find(3);
 }
