@@ -185,12 +185,23 @@ void explainSet(){
     // All other functions are same as earlier containers
     
     // {1, 2, 3, 4, 5}
-    auto it = st.find(3);
-    auto it = st.find(6);
+    auto it = st.find(3); // It returns an iterator which points to 3. Iterator => Points to address
+    auto it = st.find(6); // If no element is present it will return st.end()
 
     st.erase(5); // erasing 5 takes logarithimic time
 
     int cnt = st.count(1);
 
     auto it = st.find(3);
+    st.erase(it); // it takes constant time.
+
+    // {1, 2, 3, 4, 5}
+    auto it1 = st.find(2);
+    auto it2 = st.find(4);
+    st.erase(it1, it2); // after erase {1, 4, 5} [first, last]
+
+    // lower_bound() and upper_bound() function works in the same way as in vector does.
+
+    auto it = st.lower_bound(2);
+    auto it = st.upper_bound(3);
 }
