@@ -27,8 +27,8 @@ void explainVector(){
     v.emplace_back(2); // Similar to push_back, it dynamically increases the size and adds 2. It is generaally faster than push_back.
 
     vector<pair<int, int>>vec;
-    v.push_back({1,2});
     v.emplace_back(1,2);  // Curly braces are not required, it by itself recognises it is a pair.
+    v.push_back({1,2});
 
     vector<int> v(5, 100); // {100, 100, 100, 100, 100}
 
