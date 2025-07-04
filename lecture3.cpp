@@ -174,6 +174,7 @@ void explainPQ(){
 // Set => Stores everything in sorted order and stores unique.
 
 void explainSet(){
+    // In set everything happens in log time complexity.
     set<int>st;
     st.insert(1); // {1}
     st.emplace(2); // {1, 2}
@@ -204,4 +205,24 @@ void explainSet(){
 
     auto it = st.lower_bound(2);
     auto it = st.upper_bound(3);
+}
+
+void explainMultiSet(){
+    // Everything is same as set, it also stores duplicate elements
+
+    multiset<int>ms;
+    ms.insert(1); // {1}
+    ms.insert(1); // {1, 1}
+    ms.insert(1); // {1, 1, 1}
+
+    ms.erase(1); // all 1's erased
+
+    int cnt = ms.count(1);
+
+    // Only a single one is erased
+    ms.erase(ms.find(1));
+
+    ms.erased(ms.find(1), ms.find(1)+2);
+
+    // rest all functions are same as set.
 }
