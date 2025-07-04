@@ -170,3 +170,17 @@ void explainPQ(){
 
     // Push and Pop happens in log n, and top happens in 0(1)
 }
+
+// Set => Stores everything in sorted order and stores unique.
+
+void explainSet(){
+    set<int>st;
+    st.insert(1); // {1}
+    st.emplace(2); // {1, 2}
+    st.insert(2); // {1, 2}
+    st.insert(4); // {1, 2, 4}
+    st.insert(3); // {1, 2, 3, 4}
+
+    // Functionlity of insert in vector can be used also, that only increases efficiency.
+    // All other functions are same as earlier containers
+}
