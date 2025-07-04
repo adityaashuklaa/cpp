@@ -9,7 +9,7 @@ using namespace std;
 
 // Pairs => It can be treated as a data type which lies inside utilities library.
 void explainPair(){
-    pair<int, int> p = {1, 3};
+    pair<int, int> p = {1, 3};   
     cout << p.first << " " << p.second;
     pair<int, pair<int, int>> p = {1, {2, 3}};
     cout << p.first << " " << p.second.first << " " << p.second.second;
@@ -105,8 +105,8 @@ void explainDeque(){
     dq.push_front(5); // {5,2,4}
     dq.emplace_front(); {2,4};
 
-    dq.pop_back();
     dq.pop_front();
+    dq.pop_back();
     dq.back();
     dq.front();
 
