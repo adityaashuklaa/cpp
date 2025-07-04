@@ -57,7 +57,7 @@ void explainVector(){
         cout << *(it) << " ";
     }
     for (auto it: v) {
-        cout << it << " ";
+        cout << it << " ";   
     }
 
     // {10, 20, 30,40}
