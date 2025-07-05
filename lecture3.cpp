@@ -268,3 +268,20 @@ void explainMap(){
     auto it = mpp.lower_bound(3);
     // erase, swap, size, empty are same as above.
 }
+
+void explainMultiMap() {  
+    // everything is same as map. only it can stores multiple keys. Only mpp[key] cannot be used here.
+}
+
+void explainUnorderedMap(){
+    // Same as set and unordered_Set difference.
+}
+
+bool comp(pair<int, int>p1, pair<int, int>p2) {
+    if(p1.second < p2.second) {
+        return true;
+    } else if(p1.second == p2.second) {
+        if(p1.first>p2.second) return true;
+    }
+    return false;
+}
