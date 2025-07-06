@@ -1,4 +1,12 @@
 // #include <bits/stdc++.h>
+// Patterns
+// Nested Loops, there will be 2 loops, the outer loop will be for rows and the inner loop will be for columns.
+/* Rules for the patterns
+    1. For the outer loop, count the number of rows.
+    2. For inner loop, focus on the columns, and connect them to the rows. 
+    3. Print anything "*" inside inner for loop.
+    4. Observe symmetry.
+*/
 #include <iostream>
 using namespace std;
 void print1(int n){
