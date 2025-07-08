@@ -62,10 +62,10 @@ void vectors(){
 
     vector<int>v(2, 100);
     v.erase(v.begin() + 2, v.begin() + 4);
-    v.insert(v.begin(), 300);
+    v.insert(v.begin(), 300);   
     v.insert(v.begin() + 1, 2, 10);
 
-    vector<int> copy(2,50);
+    vector<int> copy(2,50); 
     v.insert(v.begin(), copy.begin(), copy.end());
 
     cout << v.size();
