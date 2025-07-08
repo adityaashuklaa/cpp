@@ -60,7 +60,7 @@ void vectors(){
     v.erase(v.begin() + 1);
 
     vector<int>v(2, 100);
-     v.erase(v.begin() + 2, v.begin() + 4);
+    v.erase(v.begin() + 2, v.begin() + 4);
     v.insert(v.begin(), 300);
     v.insert(v.begin() + 1, 2, 10);
 
@@ -70,8 +70,8 @@ void vectors(){
     cout << v.size();
 
     v.pop_back();
-
     v1.swap(v2);
+    
     v.clear() // erases the entire vector
 
     cout << v.empty();
