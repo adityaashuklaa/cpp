@@ -42,11 +42,11 @@ void vectors(){
 
     vector<int>::iterator it = v.end();
     vector<int>::iterator it = v.rend(); // reverse-end
-    
+
     vector<int>::iterator it = v.rbegin();
 
     cout << v[0] << " " << v.at(0);
-    cout << v.back() << " ";
+    cout << v.back() << " ";   
     
     for(vector<int>::iterator it = v.begin(); it != v.end(); it++){
         cout << *(it) << " ";
