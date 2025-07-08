@@ -58,9 +58,9 @@ void vectors(){
     }
 
     v.erase(v.begin() + 1);
-    v.erase(v.begin() + 2, v.begin() + 4);
 
     vector<int>v(2, 100);
+     v.erase(v.begin() + 2, v.begin() + 4);
     v.insert(v.begin(), 300);
     v.insert(v.begin() + 1, 2, 10);
 
