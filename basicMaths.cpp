@@ -34,7 +34,7 @@ int  main(){
 // Palindrome
 int palindrome(){
     int n;
-    cin >> n;
+    cin >> n;   
     int revNum = 0;
     int dup = n;
     while(n > 0){
