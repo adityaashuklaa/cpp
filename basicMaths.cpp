@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-
+using namespace std;
 // Basic Maths
 // For Extracting Digits
 int count(int n){
@@ -12,14 +12,19 @@ int count(int n){
     return cnt;
 }
 // Another method to ccount digits.
-int count(int n){
+int count2(int n){
     int cnt = (int)(log10(n));
     return cnt;   
     // TC => 0(log10(n))    
 }
 
 // Reverse Number
-int  main(){
+int main(){
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+        freopen("error.txt", "w", stderr);
+    #endif
     int n;
     cin >> n;
     int revNum = 0;
@@ -60,9 +65,9 @@ int Amrstrong(int n){
 }
 
 // Print all divisors 
-int printAllDivisors(){
-    for(i=1; i<=n; i++){ // TC => 0(n)
-        if(n%i = 0){
+int printAllDivisors(int n){
+    for(int i=1; i<=n; i++){ // TC => 0(n)
+        if(n%i == 0){
             cout << i << " ";
         }
     }
