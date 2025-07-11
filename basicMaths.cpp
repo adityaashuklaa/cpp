@@ -49,7 +49,7 @@ int palindrome(){
 // Amstrong Number 
 int Amrstrong(int n){
     int sum = 0;
-    int dup = n;
+    int dup = n;   
     while(n > 0){
         int lastdigit = n % 10;
         sum = sum + (lastdigit * lastdigit * lastdigit);
