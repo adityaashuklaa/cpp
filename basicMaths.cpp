@@ -15,7 +15,7 @@ int count(int n){
 int count(int n){
     int cnt = (int)(log10(n));
     return cnt; 
-    // TC => 0(log10(n)) 
+    // TC => 0(log10(n))    
 }
 
 // Reverse Number
