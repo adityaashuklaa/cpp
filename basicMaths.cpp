@@ -76,7 +76,7 @@ int printDevisors(int n){ // tc =>
         if(n%i==0){
             ls.push_back(i);
             if((n/i) !=i){
-                ls.push_back(n/i);
+                ls.push_back(n/i);  
             }
         }
     }
