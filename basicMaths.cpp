@@ -14,7 +14,7 @@ int count(int n){
 // Another method to ccount digits.
 int count(int n){
     int cnt = (int)(log10(n));
-    return cnt; 
+    return cnt;   
     // TC => 0(log10(n))    
 }
 
