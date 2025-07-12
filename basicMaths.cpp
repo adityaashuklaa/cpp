@@ -46,7 +46,7 @@ int palindrome(){
         int ld = n % 10;
         revNum = (revNum * 10) + ld;
         n = n/10;
-    }
+    }   
     if (dup == revNum) cout << "True";
     else cout << "False";
 }
