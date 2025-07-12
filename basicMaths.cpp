@@ -88,7 +88,7 @@ int printDevisors(int n){ // tc =>
     // tc => 0(n log n): n =>   number of factors
     sort(ls.begin(), ls.end());
     // 0 (number of factors) 
-    for(auto it : ls)  cout << it << " ";
+    for(auto it : ls)  cout << it << " ";  
 }
 
 int prime(int n){ // TC => 0(sqrt(n))
