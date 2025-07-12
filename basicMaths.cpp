@@ -13,7 +13,7 @@ int count(int n){
 }
 // Another method to ccount digits.
 int count2(int n){
-    int cnt = (int)(log10(n));
+    int cnt = (int)(log10(n) + 1);
     return cnt;   
     // TC => 0(log10(n))    
 }
