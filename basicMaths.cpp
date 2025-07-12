@@ -98,7 +98,7 @@ int prime(int n){ // TC => 0(sqrt(n))
             cnt++;
             if((n/i)!= i)
             cnt++;
-        }  
+        }    
     }
     if (cnt == 2) cout << "Prime";
     else cout << "Not a Prime";
