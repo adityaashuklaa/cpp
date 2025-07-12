@@ -16,6 +16,7 @@ int count2(int n){
     int cnt = (int)(log10(n) + 1);
     return cnt;   
     // TC => 0(log10(n))    
+    // When the number of iterations depends on division, that is when the TC will be lograthmic.
 }
 
 // Reverse Number
