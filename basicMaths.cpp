@@ -69,7 +69,7 @@ int printAllDivisors(int n){
     for(int i=1; i<=n; i++){ // TC => 0(n)
         if(n%i == 0){
             cout << i << " ";
-        }
+        }   
     }
 }
 
