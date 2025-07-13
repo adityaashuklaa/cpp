@@ -20,7 +20,7 @@ void print2(){
         freopen("output.txt", "w", stdout);
         freopen("error.txt", "w", stderr);
     #endif
-    if(cnt ==3 ) return;
+    if(cnt ==3 ) return; // This is generally stated as the base case, cause after this the function will not execute.
     cout << cnt << endl;
     cnt ++;
     print2();
