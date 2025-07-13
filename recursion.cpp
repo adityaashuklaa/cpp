@@ -3,18 +3,23 @@
 #include<iostream>
 using namespace std;
 
-// void print(){
-//     cout << 1 << endl;
-//     print();
-// }
+void print(){
+    cout << 1 << endl;
+    print();
+}
 
-// int main(){
-//     print();
-//     return 0;
-// }
+int main(){
+    print();
+    return 0;
+}
 
 int cnt = 0;
 void print2(){
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+        freopen("error.txt", "w", stderr);
+    #endif
     if(cnt ==3 ) return;
     cout << cnt << endl;
     cnt ++;
