@@ -73,6 +73,18 @@ void backtrack1(){
     h(n, n);
 }
 
+//  Print from n to 1, but without using f(i-1, n)
+void f(int i, int n){
+    if(i > n) return;
+    f(i+1, n);
+    cout << i;
+}
+void main(){
+    int n;
+    cin >> n;
+    f(1, n);
+}
+
 // Print linear from 1 to n. 
 
 
