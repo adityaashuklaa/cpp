@@ -85,10 +85,23 @@ void main(){
     f(1, n);
 }
 
-// Print linear from 1 to n. 
-
 
 // Sum of first n numbers, there are two ways, one is parameterised way and another one is functional.
+
+// Parameterised Way
+void ParaFact(int i, int sum){
+    if(i < 1) {
+        cout << sum;
+        return;
+    }
+    ParaFact(i-1, sum + i);
+}
+
+void main() {
+    int n;
+    cin >> n;
+    ParaFact(n, 0);
+}
 // Functional way
 int sumN(int n){
     if(n == 0) return 0;
