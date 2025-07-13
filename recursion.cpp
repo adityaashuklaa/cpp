@@ -49,7 +49,7 @@ int sumN(int n){
 int facN(int n){
     if(n == 1) return 1;
     return n * facN(n-1); 
-    // TC => 0(n); SC => 0(n)
+    // TC => 0(n); SC => 0(n)  
 }
 // int main(){
 //     int n = 5;
