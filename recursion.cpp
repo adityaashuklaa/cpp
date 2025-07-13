@@ -19,7 +19,7 @@ void print2(){
     cout << cnt << endl;
     cnt ++;
     print2();
-}
+}  
 
 int main2(){
     print2();
