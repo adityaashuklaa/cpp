@@ -121,11 +121,27 @@ int facN(int n){
 //     return 0;
 // }
 
+void arrRev(int l, int arr[], int r){
+    if(l >= r) return;
+    swap(arr[l], arr[r]);
+    arrRev(l+1, r-1);
+}
+
+void arrRevFun(){
+    int n;
+    cin >> n;
+    int arr[] = {1, 2, 3, 4, 5};
+    arrRev(0, arr, n-1);
+}
+
+//  Swaping Array using 1 pointer
 void arrF(int i, int arr[], int n){
     if(i >= n/2) return;
-    swap(arr[i], arr[n-i-1]);
+    swap(arr[i], arr[n-i-1]); // 4-0-1 = 3
     arrF(i+1, arr, n);
 }
+
+
 // int main(){
 //     int n;
 //     cin >> n;
