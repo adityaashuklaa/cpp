@@ -173,7 +173,7 @@ int stringRecursion(){
 
 // Multiple recursion calls (Fibonacci Series)
 
-int funcFib(int n){
+int funcFib(int n){ // TC => near about (2)n
     if (n<= 1) return n;
     int last = funcFib(n-1);
     int slast = funcFib(n-2);
