@@ -8,7 +8,7 @@ void print(){
     print();
 }
 
-int main(){
+int printFun(){
     print();
     return 0;
 }
@@ -26,19 +26,26 @@ void print2(){
     print2();
 }  
 
-int main2(){
+int printFun2(){
     print2();
     return 0;
 }
 
 // Print Names N times
 void f(int i , int n){
-    if(i > n) return;
+    if(i > n) return; // Base Case
     cout << "Aditya";
-    f(i+1, n);
+    f(i+1, n); // TC => 0(n)
 }
 
-void printName(int n){
+void main(){
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt", "r", stdin);
+        freopen("output.txt", "w", stdout);
+        freopen("error.txt", "w", stderr);
+    #endif
+    int n;
+    cin >> n;
     f(1, n);
 }
 
@@ -87,7 +94,7 @@ bool f(int i, string &s){
     return f(i+1, s);   
 }
 
-int main(){
+int stringRecursion(){
     string s ="madsm";
     cout << f(0, s);
     return 0;
