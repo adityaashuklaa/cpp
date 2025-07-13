@@ -107,6 +107,8 @@ int sumN(int n){
     if(n == 0) return 0;
     return n + sumN(n-1);
 }
+
+// Factorial of N
 int facN(int n){
     if(n == 1) return 1;
     return n * facN(n-1); 
