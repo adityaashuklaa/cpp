@@ -155,8 +155,8 @@ void arrF(int i, int arr[], int n){
 // Check if a given string is palindrome or not
 // "MADAM" => "MADAM" on reverse
 
-bool f(int i, string &s){
-    if(i >= s.size() / 2) return true;
+bool f(int i, string &s){ // using reference &
+    if(i >= s.size() / 2) return true; // TC => n/2
     if(s[i] != s[s.size() - i - 1]) return false;
     return f(i+1, s);   
 }
@@ -170,7 +170,16 @@ int stringRecursion(){
 // It will start printing 1 until the memory is almost full, this is called stack overflow.
 // The condition used to stop recursion is base condition.
 
-// Reverse arr using recursion
 
 // Multiple recursion calls (Fibonacci Series)
 
+int funcFib(int n){
+    if (n<= 1) return n;
+    int last = funcFib(n-1);
+    int slast = funcFib(n-2);
+    return last + slast;
+}
+
+int main6(){
+    cout << funcFib(4);
+}
