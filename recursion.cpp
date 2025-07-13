@@ -49,6 +49,30 @@ void main(){
     f(1, n);
 }
 
+void reversePrint(){
+    int n;
+    cin >> n;
+    g(n, n);
+}
+
+void g(int i, int n){
+    if(i < 1) return;
+    cout << i;
+    g(i-1, n);
+}
+
+// Print from 1 to n, but in case of backtracking.
+void h(int i, int n){ // Without using h(i+1, n)
+    if(i < 1) return;
+    h(i-1, n);
+    cout << i;
+}
+void backtrack1(){
+    int n;
+    cin >> n;
+    h(n, n);
+}
+
 // Print linear from 1 to n. 
 
 
