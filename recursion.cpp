@@ -177,7 +177,7 @@ int funcFib(int n){ // TC => near about (2)n
     if (n<= 1) return n;
     int last = funcFib(n-1);
     int slast = funcFib(n-2);
-    return last + slast;
+    return last + slast;  
 }
 
 int main6(){
