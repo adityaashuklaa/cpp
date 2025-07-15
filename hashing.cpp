@@ -65,9 +65,9 @@ int main2(){
     return 0;
 }
 
-// Map
+// Map => stores all the values in sorted order.
 
-int main3(){
+int main3(){ // TC => logn
     int n;
     cin >> n;
     int arr[n];
@@ -80,6 +80,11 @@ int main3(){
         mpp[arr[i]]++;
     }
 
+    // iterating the map
+    // for(auto it: mpp) {
+    //     cout << it.first << "->" << it.second << endl;    
+    // }
+
     int q;
     cin >> q;
     while(--q) {
@@ -90,3 +95,9 @@ int main3(){
     }
     return 0;
 }
+
+// Unordered Map
+/*
+    Tc => O(1)
+    in rare of the case it takes 0(n) => n is number of elements
+*/
