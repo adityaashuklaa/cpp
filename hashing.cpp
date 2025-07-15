@@ -1,4 +1,4 @@
-// Hashing
+// Hashing => Pre storing and fetching.
 // To find out the count of the number appearing in an array. 
 #include<iostream>
 using namespace std;
@@ -12,3 +12,4 @@ int f(int number, int arr[]){
     }
     return cnt;
 } // This method is too time consuming and a heavy approach, there are better ways as well. 
+// Here's is where Hashing comes in which makes it easier to calculate
