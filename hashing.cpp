@@ -14,6 +14,7 @@ int f(int number, int arr[]){
 } // This method is too time consuming and a heavy approach, there are better ways as well. 
 // Here's is where Hashing comes in which makes it easier to calculate
 
+int hash[1300000] = {0}; // Globally it can go upto (10 pow 7)
 int main(){
     int n;
     cin >> n;
@@ -23,7 +24,7 @@ int main(){
     }
 
     // precompute
-    int hash[13] = {0};  // inside main the hash size can only go upto (10 pow 9)
+    int hash[13] = {0};  // inside main the hash size can only go upto (10 pow 6)
     for(int i=0; i<n; i++){
         hash[arr[i]] += 1;
     }
