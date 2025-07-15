@@ -65,7 +65,7 @@ int main2(){
     return 0;
 }
 
-// Map => stores all the values in sorted order.
+// Map => stores all the values in sorted order. Follows Divison Method.
 
 int main3(){ // TC => logn
     int n;
@@ -100,4 +100,5 @@ int main3(){ // TC => logn
 /*
     Tc => O(1)
     in rare of the case it takes 0(n) => n is number of elements
+    Collison => Everyone went to the same hash place.
 */
