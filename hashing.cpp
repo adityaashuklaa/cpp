@@ -13,3 +13,28 @@ int f(int number, int arr[]){
     return cnt;
 } // This method is too time consuming and a heavy approach, there are better ways as well. 
 // Here's is where Hashing comes in which makes it easier to calculate
+
+int main(){
+    int n;
+    cin >> n;
+    int arr[n];
+    for(int i=0; i<n; i++){
+        cin >> arr[i];
+    }
+
+    // precompute
+    int hash[13] = {0};  // inside main the hash size can only go upto (10 pow 9)
+    for(int i=0; i<n; i++){
+        hash[arr[i]] += 1;
+    }
+
+    int q;
+    cin >> q;
+    while(q--) {
+        int number;
+        cin >> number;
+        // fetch
+        cout << hash[number] << endl;
+    }
+    return 0;
+}
