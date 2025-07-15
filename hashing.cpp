@@ -1,5 +1,7 @@
 // Hashing => Pre storing and fetching.
 // To find out the count of the number appearing in an array. 
+
+#include<bits/stdc++.h>
 #include<iostream>
 using namespace std;
 
@@ -46,7 +48,8 @@ int main2(){
     cin >> s;
 
     // precompute
-    int hash[26] = {0};
+    // int hash[26] = {0};  // For just lowercase
+    int hash[256] = {0};  // For Every Character
     for(int i = 0; i<s.size(); i++) {
         hash[s[i] - 'a']++;
     }
@@ -58,6 +61,32 @@ int main2(){
         cin >> c;
         // fetch
         cout << hash[c - 'a'] << endl;
+    }
+    return 0;
+}
+
+// Map
+
+int main3(){
+    int n;
+    cin >> n;
+    int arr[n];
+    for(int i; i<n; i++){
+        cin >> arr[i];
+    }
+    //pre-compute
+    map<int, int> mpp; // You can change datatype acc. to the value.
+    for(int i=0; i<n; i++) {
+        mpp[arr[i]]++;
+    }
+
+    int q;
+    cin >> q;
+    while(--q) {
+        int number; 
+        cin >> number;
+        // fetch
+        cout << mpp[number] << endl;
     }
     return 0;
 }
