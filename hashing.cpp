@@ -18,8 +18,8 @@ int f(int number, int arr[]){
 
 int hash[1300000] = {0}; // Globally it can go upto (10 pow 7)
 int main(){
-    int n;
-    cin >> n;
+    int n;   
+    cin >> n;  
     int arr[n];
     for(int i=0; i<n; i++){
         cin >> arr[i];
