@@ -12,7 +12,7 @@ int printFun(){
     print();
     return 0;
 }
-
+   
 int cnt = 0;
 void print2(){
     #ifndef ONLINE_JUDGE
