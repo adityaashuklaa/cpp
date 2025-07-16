@@ -11,7 +11,7 @@ int f(int number, int arr[]){
         if(arr[i] == number){
             cnt = cnt + 1;
         }
-    }
+    }  
     return cnt;
 } // This method is too time consuming and a heavy approach, there are better ways as well. 
 // Here's is where Hashing comes in which makes it easier to calculate
