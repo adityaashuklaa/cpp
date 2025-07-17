@@ -78,7 +78,7 @@ int main3(){ // TC => logn
     map<int, int> mpp; // You can change datatype acc. to the value.
     for(int i=0; i<n; i++) {
         mpp[arr[i]]++;
-    }
+    }   
 
     // iterating the map
     // for(auto it: mpp) {
