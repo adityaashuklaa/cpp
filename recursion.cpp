@@ -75,7 +75,7 @@ void backtrack1(){
 
 //  Print from n to 1, but without using f(i-1, n)
 void f(int i, int n){
-    if(i > n) return;
+    if(i > n) return;  
     f(i+1, n);
     cout << i;
 }
