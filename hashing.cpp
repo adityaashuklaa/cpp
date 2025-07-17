@@ -70,7 +70,7 @@ int main2(){
 int main3(){ // TC => logn
     int n;
     cin >> n;
-    int arr[n];
+    int arr[n];  
     for(int i; i<n; i++){
         cin >> arr[i];
     }
