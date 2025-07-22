@@ -69,7 +69,7 @@ void h(int i, int n){ // Without using h(i+1, n)
 }
 void backtrack1(){
     int n;
-    cin >> n;
+    cin >> n;  
     h(n, n);
 }
 
@@ -91,7 +91,7 @@ void main(){
 // Parameterised Way
 void ParaFact(int i, int sum){
     if(i < 1) {
-        cout << sum;
+        cout << sum;  
         return;
     }
     ParaFact(i-1, sum + i);
