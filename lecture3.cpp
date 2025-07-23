@@ -73,7 +73,7 @@ void explainVector(){
     v.insert(v.begin(), copy.begin(), copy.end()) // {50, 50, 300, 10, 10, 100, 100}
 
     // {10, 20}
-    cout << v.size() // 2
+    cout << v.size() // 2  
     // {10, 20}
     v.pop_back(); // {10}
 
