@@ -20,7 +20,7 @@ void explainPair(){
 }
 
 // Vectors
-void explainVector(){
+void explainVector(){  
 
     vector<int> v; // Created an empty container
     v.push_back(1); //  pushes 1 into it.
