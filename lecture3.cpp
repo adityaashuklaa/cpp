@@ -56,7 +56,7 @@ void explainVector(){
     for (auto it = v.begin(); it != v.end(); it++){ // using auto the data type is automatically assigned.
         cout << *(it) << " ";
     }
-    for (auto it: v) {
+    for (auto it: v) {  
         cout << it << " ";   
     }
 
