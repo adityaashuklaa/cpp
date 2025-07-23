@@ -51,7 +51,7 @@ void explainVector(){
     cout << v.back() << " "; // last element.
 
     for (vector<int>::iterator it = v.begin(); it!= v.end(); it++){
-        cout << *(it) << " ";
+        cout << *(it) << " ";  
     }
     for (auto it = v.begin(); it != v.end(); it++){ // using auto the data type is automatically assigned.
         cout << *(it) << " ";
