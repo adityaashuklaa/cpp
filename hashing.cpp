@@ -43,7 +43,7 @@ int main(){
 }
 
 // Character Hashing
-int main2(){
+int main2(){  
     string s;
     cin >> s;
 
