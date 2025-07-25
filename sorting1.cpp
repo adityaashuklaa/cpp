@@ -7,6 +7,9 @@
     % swap at index 1, & minimum index [1 - n-1]
     % swap at index 2, & minimum index [2 - n-1]
     % swap at index n-2 & minimum index
+
+    TC => n*2/2 + n/2 (Ignore constant and smaller values)
+    = 0(n*2)
 */ 
 
 #include<bits/stdc++.h>
