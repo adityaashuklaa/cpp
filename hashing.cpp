@@ -73,7 +73,7 @@ int main3(){ // TC => logn
     int arr[n];  
     for(int i; i<n; i++){
         cin >> arr[i];
-    }
+    }  
     //pre-compute
     map<int, int> mpp; // You can change datatype acc. to the value.
     for(int i=0; i<n; i++) {
