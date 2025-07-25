@@ -44,3 +44,8 @@ int main(){
     }
     return 0;
 }
+
+// Bubble Sort
+/*
+    Pushes Maximum to the last, certainly opposite of selection sort.
+*/
