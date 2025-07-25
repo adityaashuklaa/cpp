@@ -28,6 +28,18 @@ void selection_sort(int arr[], int n){
     }
 }
 
+void bubble_sort(int arr[], int n){
+    for(int i = n-1; i>=0; i--){
+        for(int j = 0; j<=i-1; j++){
+            if(arr[j] > arr[j+1]) {
+                int temp = arr[j+1];
+                arr[j+1] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+
 int main(){
     #ifndef ONLINE_JUDGE
         freopen("input.txt", "r", stdin);
@@ -38,7 +50,7 @@ int main(){
     cin >> n;
     int arr[n];
     for(int i=0; i<n; i++) cin >> arr[i];
-    selection_sort(arr, n);
+    bubble_sort(arr, n);
     for(int i=0; i<n; i++) {
         cout << arr[i] << " ";
     }
@@ -47,5 +59,5 @@ int main(){
 
 // Bubble Sort
 /*
-    Pushes Maximum to the last, certainly opposite of selection sort.
+    Pushes Maximum to the last by adjacent swapping, certainly opposite of selection sort.
 */
