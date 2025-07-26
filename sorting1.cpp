@@ -28,17 +28,35 @@ void selection_sort(int arr[], int n){
     }
 }
 
+// Bubble Sort
+/*
+    Pushes Maximum to the last by adjacent swapping, certainly opposite of selection sort.
+    TC => 0(n*2) this is the worst and the average complexity. 
+    For the best complexity it can happen when the array is already in the correct order, and no swaps happens.
+    For this case the TC will be 0(n)
+*/
+
 void bubble_sort(int arr[], int n){
     for(int i = n-1; i>=0; i--){
+        int didSwap = 0;
         for(int j = 0; j<=i-1; j++){
             if(arr[j] > arr[j+1]) {
                 int temp = arr[j+1];
                 arr[j+1] = arr[j];
                 arr[j] = temp;
+                didSwap = 1;
             }
+        }
+        if(didSwap == 0) {
+            break;
         }
     }
 }
+
+// Insertion Sort
+/*
+    Takes an element and places it in it's correct position.
+*/
 
 int main(){
     #ifndef ONLINE_JUDGE
@@ -57,7 +75,3 @@ int main(){
     return 0;
 }
 
-// Bubble Sort
-/*
-    Pushes Maximum to the last by adjacent swapping, certainly opposite of selection sort.
-*/
