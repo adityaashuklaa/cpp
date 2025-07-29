@@ -57,7 +57,21 @@ void bubble_sort(int arr[], int n){
 /*
     Takes an element and places it in it's correct position.
     [14, 9, 15, 12, 6, 8, 13] => Take one element and compares with the left element and then shift if it's greater.
+    TC => 0(n*2) Best case => 0(n) 
 */
+
+void insertion_sort(int arr[], int n){
+    for(int i=0; i<=n-1;i++){
+        int j = i;
+        while(j>0 && arr[j-1] > arr[j]){
+            int temp = arr[j-1];
+            arr[j-1] = arr[j];
+            arr[j] = temp;
+
+            j--;
+        }
+    }
+}
 
 int main(){
     #ifndef ONLINE_JUDGE
@@ -69,7 +83,7 @@ int main(){
     cin >> n;
     int arr[n];
     for(int i=0; i<n; i++) cin >> arr[i];
-    bubble_sort(arr, n);
+    insertion_sort(arr, n);
     for(int i=0; i<n; i++) {
         cout << arr[i] << " ";
     }
