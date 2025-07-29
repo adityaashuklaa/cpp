@@ -56,7 +56,7 @@ void bubble_sort(int arr[], int n){
 // Insertion Sort
 /*
     Takes an element and places it in it's correct position.
-    [14, 9, 15, 12, 6, 8, 13] => Take one element and compares with the left element and then shift.
+    [14, 9, 15, 12, 6, 8, 13] => Take one element and compares with the left element and then shift if it's greater.
 */
 
 int main(){
