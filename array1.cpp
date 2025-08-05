@@ -53,6 +53,7 @@ int largestElement(vector<int> &arr, int n) {
 
     Optimal Approach
     largest = arr[0], sLargest = -1
+    TC => 0
 */
 int secondLargest(vector<int> &a, int n){
     int largest = a[0];
