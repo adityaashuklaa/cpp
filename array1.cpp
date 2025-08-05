@@ -34,7 +34,7 @@ int largestElement(vector<int> &arr, int n) {
         }
         }
     } TC => 0(nlogn + n) if secondLargest doesn't exist then -1
-
+    if array contains a -ve number than INT_MIN should be used.
     Better Approach
     largest = arr[0];
     for(int i=0; i<n; i++){
