@@ -33,7 +33,25 @@ int largestElement(vector<int> &arr, int n) {
             break;
         }
         }
-    } TC => 0(n) if secondLargest doesn't exist then -1
+    } TC => 0(nlogn + n) if secondLargest doesn't exist then -1
+
+    Better Approach
+    largest = arr[0];
+    for(int i=0; i<n; i++){
+        if(arr[i] > largest){
+            largest = arr[i];
+        }
+    }
+    sLargest = -1;
+    for(int i=0; i<n; i++){
+        if(arr[i] > sLargest && arr[i] != largest){
+            sLargest = arr[i];
+        }
+    }
+    cout << sLargest
+    Tc => n+n = 0(2n)
+
+    Optimal Approach
 */
 
 // If given array is sorted or not.  TC  => Takes a single pass so takes 0(n)
