@@ -34,3 +34,16 @@ int largestElement(vector<int> &arr, int n) {
     }
     return largest;
 }
+
+// If given array is sorted or not.  TC  => Takes a single pass so takes 0(n)
+int isSorted(int n, vector<int> a){
+    for(int i=1; i<n; i++){
+        if(a[i] >= a[i-1]) {
+
+        }
+        else {
+            return false;
+        }
+    }
+    return true;
+}
