@@ -8,21 +8,6 @@
     Sort the array, and the last element which is at the index n-1, will be the largest. 
     TC => nlogn, that's why it is not the best approach.
     It doesn't matter the DS being used is array or not, if any DS which stores similar data is being used than it will work, like in this case vector.
-    Ques. Second largest element in an array.
-    Brute Force Approach. 
-    Sort the Array, The last index (n-1) will be the largest, so start with n-2, and check if n[i] != largest, i.e the 2nd largest.
-    Psuedo Code : -
-    largest = arr[n-1]
-    for(int i=n-2; i>=0; i--){
-        {
-        if(arr[i] != largest){
-            secondLargest = arr[i];
-            break;
-        }
-        }
-    } TC => 0(n) if secondLargest doesn't exist then -1
-
-
 */
 
 int largestElement(vector<int> &arr, int n) {
@@ -35,6 +20,22 @@ int largestElement(vector<int> &arr, int n) {
     return largest;
 }
 
+// Second largest element in an array.
+/*
+    Brute Force Approach. 
+    Sort the Array, The last index (n-1) will be the largest, so start with n-2, and check if n[i] != largest, i.e the 2nd largest.
+    Psuedo Code : -
+    largest = arr[n-1]
+    for(int i=n-2; i>=0; i--){
+        {
+        if(arr[i] != largest){
+            secondLargest = arr[i];
+            break;
+        }
+        }
+    } TC => 0(n) if secondLargest doesn't exist then -1
+*/
+
 // If given array is sorted or not.  TC  => Takes a single pass so takes 0(n)
 int isSorted(int n, vector<int> a){
     for(int i=1; i<n; i++){
@@ -46,4 +47,19 @@ int isSorted(int n, vector<int> a){
         }
     }
     return true;
+}
+
+// Remove Duplicates in-place from sorted array.
+/*
+    Modify the given array and return the unique elements.
+*/
+int removeDuplicates(vector<int> &arr, int n) {
+    int i = 0;
+    for(int j =1; j<n; j++) {
+        if(arr[i] != arr[j]) {
+            arr[i+1] = arr[j];
+            i++;
+        }
+    }
+    return i+1;
 }
