@@ -67,7 +67,7 @@ int secondLargest(vector<int> &a, int n){
             slargest = a[i];
         }
     }
-    return slargest;
+    return slargest;  
 }
 
 int secondLargest(vector<int> &a, int n){
