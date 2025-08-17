@@ -31,3 +31,9 @@ void leftRotate(int arr[], int n, int d){
         arr[i] = temp[i - (n-d)];
     }
 }
+// Optimal Approch
+void leftRotateOpt(int arr[], int n, int d){
+    reverse(arr, arr+d);
+    reverse(arr+d, arr+n);
+    reverse(arr, arr+n);
+}
