@@ -33,7 +33,19 @@ void leftRotate(int arr[], int n, int d){
 }
 // Optimal Approch
 void leftRotateOpt(int arr[], int n, int d){
-    reverse(arr, arr+d);
+    reverse(arr, arr+d); // CPP have reverse STL, if asked not to use then below is the manual approach.
     reverse(arr+d, arr+n);
     reverse(arr, arr+n);
+}
+// Manual Reverse
+void leftRotateManual(int arr[], int start, int end){
+    while (start <= end)
+    {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+    
 }
