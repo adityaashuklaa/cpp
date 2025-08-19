@@ -54,3 +54,13 @@ int findMaxConsecutiveOnes(vector<int>& nums) {
     }
     return maxi;
 }
+// Finding Number which appears once, as the other numbers in the array appears twice.
+// Brute force approach requires linear search.
+// Optimal Solution
+int getSingleElement(vector<int> &arr){
+    int xorr =0;
+    for(int i=0; i<arr.size(); i++){
+        xorr = xorr ^ arr[i];
+    }
+    return xorr;
+}
