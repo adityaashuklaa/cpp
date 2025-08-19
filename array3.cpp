@@ -23,4 +23,7 @@
         }
     }
     TC => 0(n) + o(n) = 0(2n)
+    SC => 0(n)
 */
+
+// Optimal Solution (Sum & XOR)
