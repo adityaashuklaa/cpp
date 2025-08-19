@@ -1,4 +1,6 @@
 // Finding Missing Number in Array.
+#include <bits/stdc++.h>
+using namespace std;    
 // Bruteforce Approach
 // for(int i=1; i<=n ; i++){ TC => in the worstcase the TC will be n*2 SC => 0(1)
 //     flag = 0
@@ -27,3 +29,13 @@
 */
 
 // Optimal Solution (Sum & XOR)
+int missingNumber(vector<int>&a, int N) {
+    int xor1 = 0; xor2 = 0;
+    int n = N-1;
+    for(int i = 0; i<n; i++) {
+        xor2 = xor2 ^ a[i];
+        xor1 = xor1 ^ (i+1);
+    }
+    xor1 = xor1 ^ N;
+    return xor1 ^ xor2;
+}
