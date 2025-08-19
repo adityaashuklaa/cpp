@@ -102,6 +102,7 @@ int linearSearch(int n, int num, vector<int>){
 }
 
 // Union of two sorted arrays
+// Brute Force Approach (TC=> 0(n1logn + n2logn) + 0(n1+n2)) (SC => 0(n1+n2) + 0(n1+n2) <= To return the answer.)
 vector <int> sortedArray(vector <int> a, vector <int> b){
     int n1 = a.size();
     int n2 = b.size();
