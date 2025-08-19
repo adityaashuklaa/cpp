@@ -120,7 +120,7 @@ vector <int> sortedArray(vector <int> a, vector <int> b){
     return temp;
 }
 // Optimal Approach
-// TC => 
+// TC => 0(n1+n2) SC => 0(n1+n2) using for to return the answer and that too in the worst case.
 vector <int> sortedArrayOpt(vector <int> a, vector <int> b) {
     int n1 = a.size();
     int n2 = a.size();
