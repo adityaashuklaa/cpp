@@ -180,3 +180,5 @@ vector<int> findArrayIntersection(vector<int> &A, int vector<int> &B, int m)
     }
     return ans;
 }
+
+// Optimal Approach (Using Two Pointers)
