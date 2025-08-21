@@ -29,6 +29,10 @@ using namespace std;
 */
 
 // Optimal Solution (Sum & XOR)
+/*Sum
+arr[] = [1, 2, 3, 4]
+Sum of n natural numbers = nx(n+1)/2
+*/
 int missingNumber(vector<int>&a, int N) {
     int xor1 = 0; xor2 = 0;
     int n = N-1;
