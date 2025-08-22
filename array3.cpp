@@ -32,6 +32,12 @@ using namespace std;
 /*Sum
 arr[] = [1, 2, 3, 4]
 Sum of n natural numbers = nx(n+1)/2
+sum = nx(n+1)/2
+s2 = 0;
+for(int i=0; i<n-1; i++){
+    s2+= arr[i]
+}
+return (sum-s2)
 */
 int missingNumber(vector<int>&a, int N) {
     int xor1 = 0; xor2 = 0;
