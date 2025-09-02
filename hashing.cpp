@@ -23,8 +23,7 @@ int main(){
     int arr[n];
     for(int i=0; i<n; i++){
         cin >> arr[i];
-    }
-
+    }  
     // precompute
     int hash[13] = {0};  // inside main the hash size can only go upto (10 pow 6)
     for(int i=0; i<n; i++){
