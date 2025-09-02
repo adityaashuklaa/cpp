@@ -9,7 +9,7 @@ int f(int number, int arr[]){
     int cnt  = 0;
     for(int i=0; i<number; i++){
         if(arr[i] == number){
-            cnt = cnt + 1;
+            cnt = cnt + 1;  
         }
     }  
     return cnt;
